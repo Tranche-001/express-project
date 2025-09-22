@@ -1,0 +1,26 @@
+{
+  "name": "express-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "modules",
+  "scripts": {
+    "start": "node --watch server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tranche-001/express-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tranche-001/express-project/issues"
+  },
+  "homepage": "https://github.com/Tranche-001/express-project#readme",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0"
+  }
+}
