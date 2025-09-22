@@ -1,7 +1,7 @@
 import express from "express"
 import * as dotenv from 'dotenv';
 import {newRouter} from "./routes/newRouter.js"
-import { indexRouter } from "./routes/indexRouter";
+import { indexRouter } from "./routes/indexRouter.js";
 dotenv.config();
 const PORT = process.env.PORT;
 
