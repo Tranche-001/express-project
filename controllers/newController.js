@@ -6,5 +6,6 @@ export const renderFormPage = (req, res) => {
 
 export const updateMessageData = (req, res) => {
   const {messageUser, messageText} = req.body;
-  messages.push({user: messageUser, text: messageText, date: new Date()});
+  messages.push({user: messageUser, text: messageText, added: new Date()});
+  res.redirect("/");
 }

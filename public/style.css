@@ -92,3 +92,7 @@ form{
 form > button {
   margin-top: 30px;
 }
+ b{
+  display: inline-block;
+  width: 5ch;
+}
