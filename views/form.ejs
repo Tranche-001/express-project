@@ -11,11 +11,12 @@
 <body>
   <main>
     <div class="form-section">
+      <h1>Add a New Message</h1>
       <form action="/new" method="POST">
         <label for="user">user-name:</label>
         <input type="text" id="user" name="messageUser">
         <label for="text">text:</label>
-        <input type="text" id="text" name="messageText">
+        <textarea id="text" name="messageText"></textarea>
         <button type="submit">Send Message!</button>
       </form>
 
