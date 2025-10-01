@@ -6,7 +6,7 @@ config();
 // All of the following properties should be read from environment variables
 // We're hardcoding them here for simplicity
 export const pool = new Pool({
-  connectionString: process.env.DB_CONNECT_STRING_INTERNAL
+  connectionString: process.env.DB_CONNECT_STRING_EXTERNAL
 });
 
 

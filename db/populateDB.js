@@ -1,20 +1,23 @@
 #! /usr/bin/env node
 
-import Client from "pg";
+import {Client} from "pg";
+import * as dotenv from 'dotenv';
+dotenv.config();
+
 
 const SQL = `
 CREATE TABLE IF NOT EXISTS messages (
   id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  username VARCHAR ( 255 ),
   text VARCHAR ( 255 ),
-  user VARCHAR ( 255 ),
   added DATE
 );
 
-INSERT INTO messages (text, user, added) 
+INSERT INTO messages (username, text, added) 
 VALUES
-  ('Hi there!', 'Amando', '2003-10-24'),
-  ('Hello World!', 'Charles', '2004-10-24'),
-  ('Does anyone know how to fix this?' 'Nomad', '2025-10-01');
+  ('Amando', 'Hi there!', '2003-10-24'),
+  ('Charles', 'Hello World!', '2004-10-24'),
+  ('Nomad', 'Does anyone know how to fix this?', '2025-10-01');
 `;
 
 async function main() {
@@ -26,6 +29,6 @@ async function main() {
   await client.query(SQL);
   await client.end();
   console.log("done");
-}
+} ""
 
 main();

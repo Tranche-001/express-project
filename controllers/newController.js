@@ -1,11 +1,12 @@
+import { queries } from "../db/queries.js";
 import { messages } from "../models/db.js"
 
 export const renderFormPage = (req, res) => {
   res.render("form")
 }
 
-export const updateMessageData = (req, res) => {
+export const updateMessageData = async (req, res) => {
   const {messageUser, messageText} = req.body;
-  messages.push({user: messageUser, text: messageText, added: new Date()});
+  await queries.updateMessageDB(messageUser, messageText);
   res.redirect("/");
 }
