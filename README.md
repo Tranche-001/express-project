@@ -14,6 +14,12 @@ Click [here](https://mini-message-board-om9r.onrender.com/) to view the live app
 - Routes
 - Views
 
+- PostgreeSQL
+- Implementing DB on a host service
+- and using its connection String + PostgreeSQL to insert data and make queries
+- Creation of scripts to populate DB
+- ENV variables for security
+
 ## Credits
 
 *Built as part of [The Odin Project](https://www.theodinproject.com/) Node.js curriculum.*
