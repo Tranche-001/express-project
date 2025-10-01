@@ -6,11 +6,7 @@ config();
 // All of the following properties should be read from environment variables
 // We're hardcoding them here for simplicity
 export const pool = new Pool({
-  host: process.env.HOST, // or wherever the db is hosted
-  user: process.env.USER,
-  database: process.env.DATABASE,
-  password: process.env.DATABASE_PASSWORD,
-  port: process.env.DB_PORT // The default port
+  connectionString: process.env.DB_CONNECT_STRING_INTERNAL
 });
 
 
