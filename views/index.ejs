@@ -14,21 +14,21 @@
       <%= title %>
     </h1>
 
-    <% for (let i=0; i < messages.length; i++) { %>
-      <div class="message">
-        <p><b>User: </b>
-          <%= messages[i].username %>
-        </p>
-        <p><b>Text: </b>
-          <%= messages[i].text %>
-        </p>
-        <p><b>Date: </b>
-          <%= messages[i].added %>
-        </p>
-      </div>
-      <% } %>
-    
-      <a class="send-new-msg" href="http://localhost:3000/new">Send new message!</a>
+      <% for (let i=0; i < messages.length; i++) { %>
+        <div class="message">
+          <p><b>User: </b>
+            <%= messages[i].username %>
+          </p>
+          <p><b>Text: </b>
+            <%= messages[i].text %>
+          </p>
+          <p><b>Date: </b>
+            <%= messages[i].added %>
+          </p>
+        </div>
+        <% } %>
+
+          <a class="send-new-msg" href="http://localhost:3000/new">Send new message!</a>
 
   </main>
 </body>
