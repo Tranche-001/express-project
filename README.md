@@ -20,6 +20,8 @@ Click [here](https://mini-message-board-om9r.onrender.com/) to view the live app
 - Creation of scripts to populate DB
 - ENV variables for security
 
+- Validation and Sanitinization
+
 ## Credits
 
 *Built as part of [The Odin Project](https://www.theodinproject.com/) Node.js curriculum.*

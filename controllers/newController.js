@@ -7,7 +7,7 @@ export const renderFormPage = (req, res) => {
 }
 
 const alphaErr = "must only contain letters.";
-const lengthErr = "must be between 1 and 10 characters.";
+const lengthErr = "must be between 1 and 20 characters.";
 const textErr = "can't have more than 200 characters"
 
 
